@@ -1,3 +1,4 @@
+
 # Yo Eri. I made this file to act as a scratch pad / white board of ideas stemming from whatever files you make.
 # This way I don't actually edit your stuff, and this file can host questions, tips, or any cool things we find
 # together.
@@ -7,6 +8,45 @@
 """
               ORIGINAL CODE
 """
+
+"""
+ASSIGNMENT 2 -- CLASSES
+````````````````````````````````````````````````````````````````````````````````````````
+1. Create a class called 'Animal'. It should have the following member variables:
+   name  (ex. Cow)
+   color (ex. Brown)
+   sound (ex. Moo)
+   type  (ex. Mammal)
+
+2. Make a LIST of this Animal type. This list should be iterable and callable. In other words, if you return
+   animalList[2], it should neatly output those member variables in some fashion. Likewise, you need a way
+   to sort this class (which I will leave up to you). Attempting to call sort(animalList) should return a list
+   of Animal objects organized by X member variable.
+
+"""
+
+
+
+
+
+
+
+
+
+
+"""
+ASSIGNMENT 1 -- INTRO
+````````````````````````````````````````````````````````````````````````````````````````
+1. Print out a greeting to the user
+2. Make a function that adds two variables together and prints the output
+3. Break a given string into a character array, then print the letters in alphabetical order with no duplicates.
+   In python, an 'array' is generally a list.
+"""
+
+####################################
+######### ORIGINAL CODE ############
+####################################
+
 
 letters = []
 
@@ -46,10 +86,13 @@ print(letters)
 
 
 
-
 """
               NEW CODE
 """
+
+####################################
+########### NEW CODE ###############
+####################################
 # This is going to look obnoxious, as it over doubled the size of the program, but I want you to keep some things in
 # mind when reading this:
 #   1. How easy is this file to reference in other scripts?
