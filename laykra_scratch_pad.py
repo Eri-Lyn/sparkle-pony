@@ -1,4 +1,5 @@
 
+
 # Yo Eri. I made this file to act as a scratch pad / white board of ideas stemming from whatever files you make.
 # This way I don't actually edit your stuff, and this file can host questions, tips, or any cool things we find
 # together.
@@ -47,7 +48,6 @@ ASSIGNMENT 1 -- INTRO
 ######### ORIGINAL CODE ############
 ####################################
 
-
 letters = []
 
 print("Hello there! Let's add some numbers.")
@@ -89,6 +89,7 @@ print(letters)
 """
               NEW CODE
 """
+
 
 ####################################
 ########### NEW CODE ###############
