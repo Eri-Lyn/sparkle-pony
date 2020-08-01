@@ -1,29 +1,4 @@
 """
-ASSIGNMENT 2 -- CLASSES
-````````````````````````````````````````````````````````````````````````````````````````
-1. Create a class called 'Animal'. It should have the following member variables:
-   name  (ex. Cow)
-   color (ex. Brown)
-   sound (ex. Moo)
-   type  (ex. Mammal)
-
-2. Make a LIST of this Animal type. This list should be iterable and callable. In other words, if you return
-   animalList[2], it should neatly output those member variables in some fashion. Likewise, you need a way
-   to sort this class (which I will leave up to you). Attempting to call sort(animalList) should return a list
-   of Animal objects organized by X member variable.
-
-"""
-
-
-
-
-
-
-
-
-
-
-"""
 ASSIGNMENT 1 -- INTRO
 ````````````````````````````````````````````````````````````````````````````````````````
 1. Print out a greeting to the user
@@ -32,49 +7,51 @@ ASSIGNMENT 1 -- INTRO
    In python, an 'array' is generally a list.
 """
 
-####################################
-######### ORIGINAL CODE ############
-####################################
+########################################################################################################################
+######### ORIGINAL CODE ################################################################################################
+########################################################################################################################
 
 letters = []
 
 print("Hello there! Let's add some numbers.")
 
 while True:  # Be careful when doing this; it's usually better to put an actual condition to check instead of
-             # having to break from a loop. But, it's not too big of a deal.
-    try:
-       var1 = float(input("Enter an integer:"))
-       vsum = str((var1 + float(input("And another:"))))
-       break
-    except ValueError:  # Don't be TOO eager to try/except every block. Most of the time it's better to let the
-                        # interpret handle the error. All you're doing is saying "Whoops!" which tells the user
-                        # nothing about the actual error. Something you COULD do is re-write this to say:
-                        #
-                        # exception ValueError as e:
-                        #    print("Whoops! Error: {0}".format(e))
-       print("Whoops!")
+   # having to break from a loop. But, it's not too big of a deal.
+   try:
+      var1 = float(input("Enter an integer:"))
+      vsum = str((var1 + float(input("And another:"))))
+      break
+   except ValueError:  # Don't be TOO eager to try/except every block. Most of the time it's better to let the
+      # interpret handle the error. All you're doing is saying "Whoops!" which tells the user
+      # nothing about the actual error. Something you COULD do is re-write this to say:
+      #
+      # exception ValueError as e:
+      #    print("Whoops! Error: {0}".format(e))
+      print("Whoops!")
 
-print("The sum is:" , vsum)
+print("The sum is:", vsum)
 
 while True:
-    word = str(input("Enter a word:"))
-    if word.isdigit():  # What happens if they put a special character?
-        print("No integers or floats, please.")
-    else:
-        break
-        
-for letter in word:           # This is how I would do this if I didn't know about set() - which you can see down
-                              # below. Pretty straightforward, which is usually the best option!
-    if letter in letters:
-        pass
-    else:
-        letters.append(letter)
-   
+   word = str(input("Enter a word:"))
+   if word.isdigit():  # What happens if they put a special character?
+      print("No integers or floats, please.")
+   else:
+      break
+
+for letter in word:  # This is how I would do this if I didn't know about set() - which you can see down
+   # below. Pretty straightforward, which is usually the best option!
+   if letter in letters:
+      pass
+   else:
+      letters.append(letter)
+
 print(letters)
 
-####################################
-########### NEW CODE ###############
-####################################
+
+########################################################################################################################
+########### NEW CODE ###################################################################################################
+########################################################################################################################
+
 # This is going to look obnoxious, as it over doubled the size of the program, but I want you to keep some things in
 # mind when reading this:
 #   1. How easy is this file to reference in other scripts?
